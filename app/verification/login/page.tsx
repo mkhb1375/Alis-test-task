@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { usePhoneNumberApi } from "@/app/api/phone-number-api";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
-import Photo from "@/components/Photo";
-import Button from "@/components/button";
+import Photo from "@/app/components/Photo";
+import Button from "@/app/components/button";
 export default function PhoneNumber() {
   const router = useRouter();
 

@@ -4,9 +4,9 @@ import { useOtpApi } from "@/app/api/otp-api";
 import OtpInput from "react-otp-input";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
-import Button from "@/components/button";
-import ProgressBar from "@/components/ProgressBar";
-import Photo from "@/components/Photo";
+import Button from "@/app/components/button";
+import ProgressBar from "@/app/components/ProgressBar";
+import Photo from "@/app/components/Photo";
 
 export default function Otp() {
   const [otp, setOtp] = useState("");

@@ -23,7 +23,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="bg-secondary  px-2 lg:px-0 py-[3.5rem] max-w-[32px] lg:max-w-full h-[94vh]  w-[50px]   lg:w-[18vw]  2xl:w-[15vw]">
+    <div className="bg-secondary  px-2 lg:px-0 py-[3.5rem] max-w-[32px] lg:max-w-full h-[120vh]  w-[50px]   lg:w-[18vw]  2xl:w-[15vw] ">
       <h1 className="hidden lg:block text-white text-center font-[800] border-border pb-6 border-b  text-[1.5rem]">
         ALIS
       </h1>

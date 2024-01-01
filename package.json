@@ -6,19 +6,26 @@
     "dev": "next dev -p 5000",
     "build": "next build",
     "start": "next start -p 5000",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lintmyprogram": "next lint",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@reduxjs/toolkit": "^2.0.1",
     "axios": "^1.6.3",
     "bootstrap": "^5.3.2",
     "js-cookie": "^3.0.5",
+    "micro-button": "^1.1.0",
     "next": "14.0.4",
+    "next-pwa": "^5.6.0",
     "react": "^18",
     "react-dom": "^18",
     "react-otp-input": "^3.1.1",
-    "react-query": "^3.39.3"
+    "react-query": "^3.39.3",
+    "react-redux": "^9.0.4",
+    "redux": "^5.0.1"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
@@ -27,6 +34,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "cypress": "^13.6.2",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "postcss": "^8",
