@@ -32,6 +32,8 @@ export default function PhoneNumber() {
   const handleButtonClick = () => {
     if (enabled) {
       // refetch();
+            Cookies.set("number", phoneNumber);
+
             router.push("/verification/otp");
 
     }
