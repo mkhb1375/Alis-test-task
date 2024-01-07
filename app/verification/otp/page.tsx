@@ -12,7 +12,7 @@ export default function Otp() {
   const [otp, setOtp] = useState("");
 
   const secret = Cookies.get("secret") || "";
-  const phone = Cookies.get("number");
+  const phone = Cookies.get("number") || "";
   const { data, refetch, isSuccess, isError, isLoading } = useOtpApi({
     secret,
     otp,
@@ -23,7 +23,9 @@ export default function Otp() {
 
   function handleClick() {
     if (otp.length === 5) {
-      refetch();
+      // refetch();
+            router.push("/products");
+
     }
   }
 
@@ -44,9 +46,9 @@ export default function Otp() {
 
   useEffect(() => {
     if (isSuccess && data) {
-      Cookies.set("secret", data.data.data.token.access_token);
+      // Cookies.set("secret", data.data.data.token.access_token);
 
-      router.push("/products");
+      // router.push("/products");
     }
   }, [isSuccess]);
 
