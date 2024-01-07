@@ -1,5 +1,4 @@
-import PhoneNumber from "./login/page";
-
+import Otp from "./otp/page";
 export default function Page() {
-  return <PhoneNumber />;
+  return <Otp />;
 }
