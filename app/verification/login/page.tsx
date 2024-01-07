@@ -31,20 +31,16 @@ export default function PhoneNumber() {
 
   const handleButtonClick = () => {
     if (enabled) {
-      // refetch();
-            Cookies.set("number", phoneNumber);
-
-            router.push("/verification/otp");
-
+      refetch();
     }
   };
   useEffect(() => {
     if (isSuccess && data) {
       const myData = data.data.data;
-      // Cookies.set("secret", myData.secret);
-      // Cookies.set("number", phoneNumber);
+      Cookies.set("secret", myData.secret);
+      Cookies.set("number", phoneNumber);
 
-      // router.push("/verification/otp");
+      router.push("/verification/otp");
     }
   }, [isSuccess]);
 
