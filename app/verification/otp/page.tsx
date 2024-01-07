@@ -11,12 +11,12 @@ import Photo from "@/app/components/Photo";
 export default function Otp() {
   const [otp, setOtp] = useState("");
 
-  const secret = Cookies.get("secret") || "asdasdasdasdsad";
+  // const secret = Cookies.get("secret") || "asdasdasdasdsad";
   const phone = Cookies.get("number") ;
-  const { data, refetch, isSuccess, isError, isLoading } = useOtpApi({
-    secret,
-    otp,
-  });
+  // const { data, refetch, isSuccess, isError, isLoading } = useOtpApi({
+  //   secret,
+  //   otp,
+  // });
   const [timer, setTimer] = useState(60);
   const [enabled, setEnabled] = useState(false);
   const router = useRouter();
@@ -44,17 +44,17 @@ export default function Otp() {
     }
   }, [timer]);
 
-  useEffect(() => {
-    if (isSuccess && data) {
-      // Cookies.set("secret", data.data.data.token.access_token);
+  // useEffect(() => {
+  //   if (isSuccess && data) {
+  //     Cookies.set("secret", data.data.data.token.access_token);
 
-      // router.push("/products");
-    }
-  }, [isSuccess]);
+  //     router.push("/products");
+  //   }
+  // }, [isSuccess]);
 
   function handleRetry() {
     if (enabled) {
-      router.push("/verification/login");
+      // router.push("/verification/login");
     }
   }
 
@@ -104,7 +104,7 @@ export default function Otp() {
           <ProgressBar duration={60000} selectedIdx={0} idx={0} />
         </div>
         <Button
-          isLoading={isLoading}
+          isLoading={false}
           enabled={otp.length === 5}
           callback={handleClick}
         />
