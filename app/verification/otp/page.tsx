@@ -11,8 +11,8 @@ import Photo from "@/app/components/Photo";
 export default function Otp() {
   const [otp, setOtp] = useState("");
 
-  const secret = Cookies.get("secret") || "";
-  const phone = Cookies.get("number") || "";
+  const secret = Cookies.get("secret") || "asdasdasdasdsad";
+  const phone = Cookies.get("number") ;
   const { data, refetch, isSuccess, isError, isLoading } = useOtpApi({
     secret,
     otp,
